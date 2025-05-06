@@ -22,6 +22,8 @@
 
 **Nombre del tablero:** `ProyectoParcial`
 
+**Link del trello:** https://trello.com/b/1jIpelBf/icotepapuspro
+
 **Columnas configuradas:**
 - PBI
 - Selected
