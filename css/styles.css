@@ -1,54 +1,63 @@
-
 /* Font Style */
 @font-face {
     font-family: "Montserrat";
-    src: url("../fonts/Montserrat-VariableFont_wght.ttf") format('truetype');
+    src: url("../fonts/Montserrat-VariableFont_wght.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
 /* Body Style */
-body{
-    font-family: 'Montserrat', sans-serif, monospace;
+body {
+    font-family: "Montserrat", sans-serif, monospace;
     background-image: url("/img/inicio_background.webp");
-    background-size: cover;         /* Imagen cubre el contenedor */
-    background-position: center;    /* Centra la imagen */
-    background-repeat: no-repeat;   /* Evita que la imagen se repita */
-    background-attachment: fixed;   /* No hay movimiento al hacer scroll*/
+    background-size: cover;
+    /* Imagen cubre el contenedor */
+    background-position: center;
+    /* Centra la imagen */
+    background-repeat: no-repeat;
+    /* Evita que la imagen se repita */
+    background-attachment: fixed;
+    /* No hay movimiento al hacer scroll*/
     color: white;
     overflow-x: hidden;
 }
 
-.full_container{
-}
-
 /* Common Classes */
-h1, h2, h3, h4, h5, h6, li, p, ul{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li,
+p,
+ul {
     padding: 0;
     margin: 0;
 }
 
-.flex_r{
+.flex_r {
     display: flex;
     flex-direction: row;
 }
 
-.flex_c{
+.flex_c {
     display: flex;
     flex-direction: column;
 }
 
-
 /* Navbar Style */
-.navbar{
+.navbar {
     padding: 1rem;
-    background: rgba(0, 0, 0, 0.3);  /* semitransparente */
-    backdrop-filter: blur(10px);    /* desenfoque elegante */
+    background: rgba(0, 0, 0, 0.3);
+    /* semitransparente */
+    backdrop-filter: blur(10px);
+    /* desenfoque elegante */
     color: white;
     position: relative;
     top: 0;
@@ -57,11 +66,11 @@ h1, h2, h3, h4, h5, h6, li, p, ul{
     align-items: center;
 }
 
-.navbar--li{
+.navbar--li {
     list-style: none;
 }
 
-.navbar--item{
+.navbar--item {
     position: relative;
     color: white;
     text-decoration: none;
@@ -70,8 +79,8 @@ h1, h2, h3, h4, h5, h6, li, p, ul{
     transition: color 0.3s ease;
 }
 
-.navbar--item::after{
-    content: '';
+.navbar--item::after {
+    content: "";
     position: absolute;
     left: 50%;
     bottom: -4px;
@@ -79,34 +88,33 @@ h1, h2, h3, h4, h5, h6, li, p, ul{
     transform-origin: center;
     width: 100%;
     height: 2px;
-    background: linear-gradient(90deg, #FC466B, #3F5EFB);
+    background: linear-gradient(90deg, #fc466b, #3f5efb);
     transition: transform 0.3s ease;
 }
 
-.navbar--item:hover{
-    background: linear-gradient(90deg, #FC466B, #3F5EFB);
+.navbar--item:hover {
+    background: linear-gradient(90deg, #fc466b, #3f5efb);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-.navbar--item:hover::after{
+.navbar--item:hover::after {
     transform: translateX(-50%) scaleX(1);
 }
 
 /* Title Style */
 
-.main_container{
+.main_container {
     justify-content: center;
     align-items: center;
     height: 80vh;
     text-align: center;
 }
 
-.welcome_container h1{
+.welcome_container h1 {
     font-size: 6em;
     font-weight: 200;
-}   
-
+}
 
 /* Title Section */
 .main_container {
@@ -115,7 +123,8 @@ h1, h2, h3, h4, h5, h6, li, p, ul{
     align-items: center;
     height: 65vh;
     text-align: center;
-    padding-top: 5rem; /* espacio por el navbar fijo */
+    padding-top: 5rem;
+    /* espacio por el navbar fijo */
 }
 
 .welcome_container h1 {
@@ -165,17 +174,18 @@ h1, h2, h3, h4, h5, h6, li, p, ul{
     }
 }
 
-/*card desrrollador*/
+/* Card desrrollador */
 .personal_section {
     align-items: center;
     justify-content: center;
     margin-top: 4rem;
     margin-bottom: 4rem;
     width: 100%;
+    gap: 2.5em;
 }
 
 .profile_card {
-    background-color: #d081c0be;
+    background-color: #333;
     border-radius: 2rem;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     padding: 3rem;
@@ -188,6 +198,12 @@ h1, h2, h3, h4, h5, h6, li, p, ul{
 
 .profile_card:hover {
     transform: scale(1.02);
+}
+
+/* Cami Card */
+
+.cami_card {
+    background-color: #d081c0be;
 }
 
 .profile_photo {
@@ -228,4 +244,191 @@ h1, h2, h3, h4, h5, h6, li, p, ul{
 
 .social_links a:hover {
     color: #4b43d3;
+}
+
+/* Hugo Card */
+
+.hugo_card {
+    background: rgba(43, 43, 43, 0.6);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    /* Safari */
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    gap: 0;
+}
+
+/* Hugo Card Nav */
+
+.hugo_card_nav {
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.hugo_card_nav h2 {
+    margin-left: 1em;
+}
+
+.hugo_card_profile_name {
+    font-weight: 700;
+}
+
+.hugo_card_nav_sm {
+    justify-content: space-around;
+    align-items: center;
+    gap: 0.8em;
+}
+
+.icon_github {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.icon_github img {
+    max-width: 50px;
+}
+
+.button-sm-project {
+    cursor: pointer;
+    text-decoration: none;
+    color: #ffff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #000;
+    border: 2px solid #000;
+    transition: all 0.45s;
+}
+
+.button-sm-project:hover {
+    transform: rotate(360deg);
+    transform-origin: center center;
+    background: linear-gradient(90deg, #d8c5c5, #f72585);
+    color: #2d2e32;
+}
+
+.button-sm-project:hover .btn-svg {
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(305deg) brightness(103%) contrast(103%);
+}
+
+/* Hugo Card Main */
+
+.hugo_card_main {
+    gap: 1.4em;
+    justify-content: space-around;
+    align-items: stretch;
+    margin-bottom: 2.2em;
+}
+
+.hugo_card_main_midline {
+    width: 3px;
+    background: linear-gradient(to bottom, #6e00ff, #f72585);
+    border-radius: 2px;
+    box-shadow: 0 0 8px rgba(111, 0, 255, 0.4);
+    animation: pulseLine 2s ease-in-out infinite;
+}
+
+/* Animación linea de medio */
+@keyframes pulseLine {
+
+    0%,
+    100% {
+        transform: scaleY(1);
+        opacity: 1;
+    }
+
+    50% {
+        transform: scaleY(1.1);
+        opacity: 0.8;
+    }
+}
+
+/* Hugo about */
+.hugo_about {
+    color: #eee;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+.about_intro {
+    margin-bottom: 1em;
+    font-size: 1.1rem;
+}
+
+.about_intro .highlight_career {
+    font-weight: bold;
+    color: #f72585;
+    text-shadow: 0 0 4px rgba(247, 37, 133, 0.3);
+}
+
+.about_tech {
+    margin-bottom: 0.5em;
+    font-weight: 600;
+    color: #fef;
+}
+
+.tech_list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding: 0;
+    list-style: none;
+}
+
+.tech_badge {
+    background-color: #811345;
+    color: #fff;
+    padding: 0.4em 0.8em;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    transition: background 0.3s;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.tech_badge:hover {
+    background-color: #740939;
+    cursor: default;
+}
+
+/* Hugo Card Image */
+.hugo_card_img {
+    justify-content: center;
+    margin-bottom: 2em;
+}
+
+.hugo_card_img img{
+    border-radius: 50%;
+    /* Mantiene el estilo circular */
+    border: 4px solid #5a0e31;
+    /* Borde de color vibrante (ajústalo a tu paleta) */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    /* Sombra para dar profundidad */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 200px;
+    /* Ajusta según tu layout */
+    height: 200px;
+    /* Asegura que sea cuadrada antes del border-radius */
+    object-fit: cover;
+    /* Recorte limpio sin deformar */
+}
+
+/* Efecto al pasar el cursor */
+.hugo_card_img img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 24px rgba(255, 0, 119, 0.6);
+}
+
+/* Hugo Card Footer */
+
+.hugo_card_footer {
+    color: #fff;
+    text-align: center;
+}
+
+.footer-text {
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
 }
