@@ -432,3 +432,117 @@ ul {
     margin: 0.5rem 0;
     font-size: 0.9rem;
 }
+
+/* para el cum*/
+
+.scrum_image {
+  width: 720px;
+  height: 480px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border-radius: 9%;       
+}
+
+.scrum_card_text h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 4rem;
+}
+
+.scrum_card_text p {
+  line-height: 1.5;
+  margin-bottom: 0.8rem;
+}
+
+
+/* Eder Alvarez Card – fondo llamativo */
+.eder_card {
+  /* hereda width y padding de .profile_card */
+  background: linear-gradient(135deg, #3102ffa4, #e52e719c);
+  border-radius: 1rem;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Overlay de brillo suave */
+.eder_card::before {
+  content: "";
+  position: absolute;
+  top: -30%;
+  left: -30%;
+  width: 160%;
+  height: 160%;
+  background: radial-gradient(circle at center, rgba(255,255,255,0.3) 0%, transparent 70%);
+  transform: rotate(45deg);
+  pointer-events: none;
+}
+
+/* Foto con borde brillante */
+.eder_card .profile_photo {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 15px;
+  border: 3px solid rgba(255, 255, 255, 0.6);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Nombre y tagline resaltados */
+.eder_card .profile_name {
+  font-size: 2.6rem;
+  color: #ffffff;
+  margin-bottom: 5px;
+}
+.eder_card .profile_tagline {
+  font-size: 1.5rem;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+/* Tech badges */
+.eder_card .profile_info {
+  text-align: center;
+}
+.eder_card .profile_info .techs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+.eder_card .profile_info .techs span {
+  background: #000000;
+  border-radius: 12px;
+  padding: 4px 10px;
+  font-size: 0.85rem;
+  color: #ffffff;
+}
+
+.eder_card .social_links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.eder_card .social_links a {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s, background 0.2s;
+}
+
+.eder_card .social_links a svg {
+  width: 20px;
+  height: 20px;
+}
+
+.eder_card .social_links a:hover {
+  transform: scale(1.1);
+  background: #fde2e4;
+}
