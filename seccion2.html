@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patrones de diseño</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <div class="flex_c full_container">
+
+        <header>
+            <nav>
+                <ul class="flex_r align_items_c navbar">
+                    <li class="navbar--li"><a class="navbar--item" href="seccion1.html">Apartado 1</a></li>
+                    <li class="navbar--li"><a class="navbar--item" href="seccion2.html">Apartado 2</a></li>
+                    <li class="navbar--li"><a class="navbar--item" href="index.html">Home</a></li>
+                    <li class="navbar--li"><a class="navbar--item" href="seccion3.html">Apartado 3</a></li>
+                    <li class="navbar--li"><a class="navbar--item" href="seccion4.html">Desarrolladores</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="flex_c personal_section">
+                <div class="profile_card flex_c">
+
+
+                    <h1 class="profile_name">Patrones de diseño</h1>
+
+                    <div class="patron_container">
+                        <div class="patron_container_title">
+                            <h2>Patron singleton</h2>
+                        </div>
+                        <div class="patron_container_content">
+                            <p>El patrón Singleton garantiza que una clase tenga una única instancia y proporciona un
+                                punto de acceso global a ella. Es útil para objetos que deben tener una sola
+                                representación, como una conexión a base de datos o un manejador de configuración.</p>
+                        </div>
+
+                        <div class="patron_container_img">
+                            <img class="uml_img" src="/img/patron/Singleton_UML.png">
+                        </div>
+
+                        <div class="patron_container_list">
+                            <ul>
+                                <li>Solo permite una instancia de la clase.</li>
+                                <li>Control centralizado de acceso.</li>
+                                <li>Se accede mediante un método estático (getInstance()).</li>
+                                <li>Evita la creación de múltiples objetos innecesarios.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="patron_container">
+                        <div class="patron_container_title">
+                            <h2>Patron Factory</h2>
+                        </div>
+                        <div class="patron_container_content">
+                            <p>El patrón Factory encapsula la lógica de creación de objetos, permitiendo que las
+                                subclases decidan qué clase instanciar. Es ideal cuando el código cliente no debe
+                                depender de las clases concretas que necesita utilizar.</p>
+                        </div>
+
+                        <div class="patron_container_img">
+                            <img class="uml_img" src="/img/patron/Factory_Method.png">
+                        </div>
+
+                        <div class="patron_container_list">
+                            <ul class="patron_container_list">
+                                <li>Proporciona una interfaz para crear objetos, pero deja a las subclases la decisión
+                                    de qué instancia crear.</li>
+                                <li>Promueve la desacoplación entre el código cliente y las clases concretas.</li>
+                                <li>Facilita la extensión del sistema sin modificar el código existente.</li>
+                                <li>Útil para manejar familias de objetos relacionados.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="patron_container">
+                        <div class="patron_container_title">
+                            <h2>Patron Adapter</h2>
+                        </div>
+                        <div class="patron_container_content">
+                            <p>El patrón Adapter actúa como un puente entre dos interfaces incompatibles. Permite que
+                                clases con interfaces distintas trabajen juntas envolviendo una en una interfaz
+                                compatible para el cliente.</p>
+                        </div>
+
+                        <div class="patron_container_img">
+                            <img class="uml_img" src="/img/patron/Adapter_UML.png">
+                        </div>
+
+                        <div class="patron_container_list">
+                            <ul class="patron_container_list">
+                                <li>Convierte la interfaz de una clase en otra esperada por el cliente.</li>
+                                <li>Favorece la reutilización de clases existentes sin modificarlas.</li>
+                                <li>Puede usarse para integrar sistemas heredados con nuevas funcionalidades.</li>
+                                <li>Existen dos tipos: adapter de clase (herencia) y adapter de objeto (composición).
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                </div>
+            </section>
+
+
+        </main>
+
+
+    </div>
+</body>
+
+</html>
