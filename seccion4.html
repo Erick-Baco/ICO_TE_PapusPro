@@ -1,225 +1,310 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Inicio</title>
-    <link rel="stylesheet" href="./css/styles.css">
-</head>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
 
-<body>
-
+  <body>
     <div class="flex_c full_container">
+      <header>
+        <nav>
+          <ul class="flex_r align_items_c navbar">
+            <li class="navbar--li">
+              <a class="navbar--item" href="seccion1.html">Apartado 1</a>
+            </li>
+            <li class="navbar--li">
+              <a class="navbar--item" href="#">Apartado 2</a>
+            </li>
+            <li class="navbar--li">
+              <a class="navbar--item" href="index.html">Home</a>
+            </li>
+            <li class="navbar--li">
+              <a class="navbar--item" href="#">Apartado 3</a>
+            </li>
+            <li class="navbar--li">
+              <a class="navbar--item" href="seccion4.html">Desarrolladores</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
 
-        <header>
-            <nav>
-                <ul class="flex_r align_items_c navbar">
-                    <li class="navbar--li"><a class="navbar--item" href="#seccion1.html">Apartado 1</a></li>
-                    <li class="navbar--li"><a class="navbar--item" href="#">Apartado 2</a></li>
-                    <li class="navbar--li"><a class="navbar--item" href="index.html">Home</a></li>
-                    <li class="navbar--li"><a class="navbar--item" href="#">Apartado 3</a></li>
-                    <li class="navbar--li"><a class="navbar--item" href="seccion4.html">Desarrolladores</a></li>
+      <main>
+        <section class="flex_c personal_section">
+          <div class="profile_card flex_c cami_card">
+            <img
+              src="./img/cami.jpeg"
+              alt="Foto de Cami"
+              class="profile_photo"
+            />
+
+            <h2 class="profile_name">Cami Cam</h2>
+
+            <div class="profile_info">
+              <p>
+                <strong>Tecnologías favoritas:</strong> JavaScript, Node.js,
+                Playwright, HTML, CSS
+              </p>
+              <p><strong>Semestre:</strong> 6°</p>
+              <p>
+                <strong>Hobbie:</strong> Llorar por historias ficticias, ver las
+                estrellas y planetas con mi telescopio y darle amor a mis
+                perritos ✨
+              </p>
+            </div>
+
+            <div class="social_links">
+              <a
+                href="https://www.instagram.com/_florquedafulgor_?igsh=MW5tYmcwamV5YTRibg%3D%3D&utm_source=qr"
+                target="_blank"
+                >Instagram</a
+              >
+              <a href="https://github.com/CamChavez" target="_blank">GitHub</a>
+            </div>
+          </div>
+
+          <div class="profile_card flex_c hugo_card">
+            <div class="flex_r hugo_card_nav">
+              <div>
+                <h2 class="hugo_card_profile_name">Hugo Perez</h2>
+              </div>
+              <div class="flex_r hugo_card_nav_sm">
+                <button
+                  class="button-sm-project"
+                  onclick="window.location.href='https://github.com/HugoPzo'"
+                >
+                  <svg
+                    stroke="#fff"
+                    fill="#fff"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xmlns="http://www.w3.org/2000/svg"
+                    version="1.1"
+                    class="btn-svg"
+                    width="22px"
+                    viewBox="0 0 20 20"
+                  >
+                    <g stroke-width="0" id="SVGRepo_bgCarrier"></g>
+                    <g
+                      stroke-linejoin="round"
+                      stroke-linecap="round"
+                      id="SVGRepo_tracerCarrier"
+                    ></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <title>github [#fff142]</title>
+                      <desc>Created with Sketch.</desc>
+                      <defs></defs>
+                      <g
+                        fill-rule="evenodd"
+                        fill="none"
+                        stroke-width="1"
+                        stroke="none"
+                        id="Page-1"
+                      >
+                        <g
+                          fill="#fff"
+                          transform="translate(-140.000000, -7559.000000)"
+                          id="Dribbble-Light-Preview"
+                        >
+                          <g
+                            transform="translate(56.000000, 160.000000)"
+                            id="icons"
+                          >
+                            <path
+                              id="github-[#fff142]"
+                              d="M94,7399 C99.523,7399 104,7403.59 104,7409.253 C104,7413.782 101.138,7417.624 97.167,7418.981 C96.66,7419.082 96.48,7418.762 96.48,7418.489 C96.48,7418.151 96.492,7417.047 96.492,7415.675 C96.492,7414.719 96.172,7414.095 95.813,7413.777 C98.04,7413.523 100.38,7412.656 100.38,7408.718 C100.38,7407.598 99.992,7406.684 99.35,7405.966 C99.454,7405.707 99.797,7404.664 99.252,7403.252 C99.252,7403.252 98.414,7402.977 96.505,7404.303 C95.706,7404.076 94.85,7403.962 94,7403.958 C93.15,7403.962 92.295,7404.076 91.497,7404.303 C89.586,7402.977 88.746,7403.252 88.746,7403.252 C88.203,7404.664 88.546,7405.707 88.649,7405.966 C88.01,7406.684 87.619,7407.598 87.619,7408.718 C87.619,7412.646 89.954,7413.526 92.175,7413.785 C91.889,7414.041 91.63,7414.493 91.54,7415.156 C90.97,7415.418 89.522,7415.871 88.63,7414.304 C88.63,7414.304 88.101,7413.319 87.097,7413.247 C87.097,7413.247 86.122,7413.234 87.029,7413.87 C87.029,7413.87 87.684,7414.185 88.139,7415.37 C88.139,7415.37 88.726,7417.2 91.508,7416.58 C91.513,7417.437 91.522,7418.245 91.522,7418.489 C91.522,7418.76 91.338,7419.077 90.839,7418.982 C86.865,7417.627 84,7413.783 84,7409.253 C84,7403.59 88.478,7399 94,7399"
+                            ></path>
+                          </g>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                </button>
+                <button
+                  class="button-sm-project"
+                  onclick="window.location.href='https://www.instagram.com/hugo.pzz/'"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="btn-svg"
+                    width="22px"
+                    height="22px"
+                    fill="white"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5zm8.75 2.25a.75.75 0 1 1 1.5 0 .75.75 0 0 1-1.5 0zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 1.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7z"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+            <div class="flex_r hugo_card_img">
+              <img src="img/Hugo/Hugo_Foto.jpeg" alt="Foto Hugo" />
+            </div>
+
+            <div class="flex_r hugo_card_main">
+              <div class="hugo_card_main_midline"></div>
+
+              <div class="hugo_about">
+                <p class="about_intro">
+                  Soy estudiante de
+                  <strong class="highlight_career"
+                    >Ingeniería en Computación</strong
+                  >, actualmente en el <strong>sexto semestre</strong>. Me
+                  apasiona la <strong>Ciencia de Datos</strong>, especialmente
+                  aplicada al análisis en el mundo del <strong>deporte</strong>,
+                  con enfoque en <span>fútbol</span>.
+                </p>
+                <p class="about_tech">
+                  Las tecnologías que utilizo actualmente incluyen:
+                </p>
+                <ul class="tech_list">
+                  <li><span class="tech_badge">Python</span></li>
+                  <li><span class="tech_badge">Django</span></li>
+                  <li><span class="tech_badge">FastAPI</span></li>
+                  <li><span class="tech_badge">Scikit-learn</span></li>
+                  <li><span class="tech_badge">NumPy</span></li>
+                  <li><span class="tech_badge">Pandas</span></li>
+                  <li><span class="tech_badge">PyTorch</span></li>
+                  <li><span class="tech_badge">PyQt6</span></li>
+                  <li><span class="tech_badge">Node JS</span></li>
+                  <li><span class="tech_badge">SQL</span></li>
                 </ul>
-            </nav>
-        </header>
+              </div>
 
-        <main>
-            <section class="flex_c personal_section">
-                <div class="profile_card flex_c cami_card">
+              <div class="hugo_card_main_midline"></div>
+            </div>
 
-                    <img src="./img/cami.jpeg" alt="Foto de Cami" class="profile_photo">
+            <div class="flex_r hugo_card_footer">
+              <p class="footer-text">
+                &copy; 2025 Hugo Pérez — Ingeniería en Computación
+              </p>
+            </div>
+          </div>
 
-                    <h2 class="profile_name">Cami Cam</h2>
+          <div class="profile_card flex_c hugo_card">
+            <div class="flex_r hugo_card_nav">
+              <div>
+                <h2 class="hugo_card_profile_name">Eder Avalos Juarez</h2>
+              </div>
+              <div class="flex_r hugo_card_nav_sm">
+                <button
+                  class="button-sm-project"
+                  onclick="window.location.href='https://github.com/EderAJ30'"
+                >
+                  <svg
+                    stroke="#fff"
+                    fill="#fff"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xmlns="http://www.w3.org/2000/svg"
+                    version="1.1"
+                    class="btn-svg"
+                    width="22px"
+                    viewBox="0 0 20 20"
+                  >
+                    <g stroke-width="0" id="SVGRepo_bgCarrier"></g>
+                    <g
+                      stroke-linejoin="round"
+                      stroke-linecap="round"
+                      id="SVGRepo_tracerCarrier"
+                    ></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <title>github [#fff142]</title>
+                      <desc>Created with Sketch.</desc>
+                      <defs></defs>
+                      <g
+                        fill-rule="evenodd"
+                        fill="none"
+                        stroke-width="1"
+                        stroke="none"
+                        id="Page-1"
+                      >
+                        <g
+                          fill="#fff"
+                          transform="translate(-140.000000, -7559.000000)"
+                          id="Dribbble-Light-Preview"
+                        >
+                          <g
+                            transform="translate(56.000000, 160.000000)"
+                            id="icons"
+                          >
+                            <path
+                              id="github-[#fff142]"
+                              d="M94,7399 C99.523,7399 104,7403.59 104,7409.253 C104,7413.782 101.138,7417.624 97.167,7418.981 C96.66,7419.082 96.48,7418.762 96.48,7418.489 C96.48,7418.151 96.492,7417.047 96.492,7415.675 C96.492,7414.719 96.172,7414.095 95.813,7413.777 C98.04,7413.523 100.38,7412.656 100.38,7408.718 C100.38,7407.598 99.992,7406.684 99.35,7405.966 C99.454,7405.707 99.797,7404.664 99.252,7403.252 C99.252,7403.252 98.414,7402.977 96.505,7404.303 C95.706,7404.076 94.85,7403.962 94,7403.958 C93.15,7403.962 92.295,7404.076 91.497,7404.303 C89.586,7402.977 88.746,7403.252 88.746,7403.252 C88.203,7404.664 88.546,7405.707 88.649,7405.966 C88.01,7406.684 87.619,7407.598 87.619,7408.718 C87.619,7412.646 89.954,7413.526 92.175,7413.785 C91.889,7414.041 91.63,7414.493 91.54,7415.156 C90.97,7415.418 89.522,7415.871 88.63,7414.304 C88.63,7414.304 88.101,7413.319 87.097,7413.247 C87.097,7413.247 86.122,7413.234 87.029,7413.87 C87.029,7413.87 87.684,7414.185 88.139,7415.37 C88.139,7415.37 88.726,7417.2 91.508,7416.58 C91.513,7417.437 91.522,7418.245 91.522,7418.489 C91.522,7418.76 91.338,7419.077 90.839,7418.982 C86.865,7417.627 84,7413.783 84,7409.253 C84,7403.59 88.478,7399 94,7399"
+                            ></path>
+                          </g>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                </button>
+                <button
+                  class="button-sm-project"
+                  onclick="window.location.href='https://www.instagram.com/ederaj.30/'"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="btn-svg"
+                    width="22px"
+                    height="22px"
+                    fill="white"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5zm8.75 2.25a.75.75 0 1 1 1.5 0 .75.75 0 0 1-1.5 0zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 1.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7z"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
 
-                    <div class="profile_info">
-                        <p><strong>Tecnologías favoritas:</strong> JavaScript, Node.js, Playwright, HTML, CSS</p>
-                        <p><strong>Semestre:</strong> 6°</p>
-                        <p><strong>Hobbie:</strong> Llorar por historias ficticias, ver las estrellas y planetas con mi
-                            telescopio y darle amor a mis perritos ✨</p>
-                    </div>
+            <div class="flex_r hugo_card_img">
+              <img src="img/EderAJ/Eder.jpg" alt="Foto EderAJ" />
+            </div>
 
-                    <div class="social_links">
-                        <a href="https://www.instagram.com/_florquedafulgor_?igsh=MW5tYmcwamV5YTRibg%3D%3D&utm_source=qr"
-                            target="_blank">Instagram</a>
-                        <a href="https://github.com/CamChavez" target="_blank">GitHub</a>
-                    </div>
+            <div class="flex_r hugo_card_main">
+              <div class="hugo_card_main_midline"></div>
 
-                </div>
+              <div class="hugo_about">
+                <p class="about_intro">
+                  Soy estudiante de
+                  <strong class="highlight_career"
+                    >Ingeniería en Computación</strong
+                  >, actualmente en el <strong>sexto semestre</strong>. Mi
+                  interes va por desarrollo web tanto en el frontend como en el
+                  backend y la divulgacion musical.
+                </p>
+                <p class="about_tech">
+                  Las tecnologías que utilizo actualmente incluyen:
+                </p>
+                <ul class="tech_list">
+                  <li><span class="tech_badge">JavaScript</span></li>
+                  <li><span class="tech_badge">React</span></li>
+                  <li><span class="tech_badge">Node.js</span></li>
+                  <li><span class="tech_badge">Express</span></li>
+                  <li><span class="tech_badge">Java</span></li>
+                  <li><span class="tech_badge">SpringBoot</span></li>
+                  <li><span class="tech_badge">MySQL</span></li>
+                  <li><span class="tech_badge">Linux</span></li>
+                  <li><span class="tech_badge">Github</span></li>
+                  <li><span class="tech_badge">Docker</span></li>
+                </ul>
+              </div>
 
-                <div class="profile_card flex_c hugo_card">
-                    <div class="flex_r hugo_card_nav">
-                        <div>
-                            <h2 class="hugo_card_profile_name">
-                                Hugo Perez
-                            </h2>
-                        </div>
-                        <div class="flex_r hugo_card_nav_sm">
-                            <button class="button-sm-project"
-                                onclick="window.location.href='https://github.com/HugoPzo'">
-                                <svg stroke="#fff" fill="#fff" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                    xmlns="http://www.w3.org/2000/svg" version="1.1" class="btn-svg" width="22px"
-                                    viewBox="0 0 20 20">
-                                    <g stroke-width="0" id="SVGRepo_bgCarrier"></g>
-                                    <g stroke-linejoin="round" stroke-linecap="round" id="SVGRepo_tracerCarrier"></g>
-                                    <g id="SVGRepo_iconCarrier">
-                                        <title>github [#fff142]</title>
-                                        <desc>Created with Sketch.</desc>
-                                        <defs></defs>
-                                        <g fill-rule="evenodd" fill="none" stroke-width="1" stroke="none" id="Page-1">
-                                            <g fill="#fff" transform="translate(-140.000000, -7559.000000)"
-                                                id="Dribbble-Light-Preview">
-                                                <g transform="translate(56.000000, 160.000000)" id="icons">
-                                                    <path id="github-[#fff142]"
-                                                        d="M94,7399 C99.523,7399 104,7403.59 104,7409.253 C104,7413.782 101.138,7417.624 97.167,7418.981 C96.66,7419.082 96.48,7418.762 96.48,7418.489 C96.48,7418.151 96.492,7417.047 96.492,7415.675 C96.492,7414.719 96.172,7414.095 95.813,7413.777 C98.04,7413.523 100.38,7412.656 100.38,7408.718 C100.38,7407.598 99.992,7406.684 99.35,7405.966 C99.454,7405.707 99.797,7404.664 99.252,7403.252 C99.252,7403.252 98.414,7402.977 96.505,7404.303 C95.706,7404.076 94.85,7403.962 94,7403.958 C93.15,7403.962 92.295,7404.076 91.497,7404.303 C89.586,7402.977 88.746,7403.252 88.746,7403.252 C88.203,7404.664 88.546,7405.707 88.649,7405.966 C88.01,7406.684 87.619,7407.598 87.619,7408.718 C87.619,7412.646 89.954,7413.526 92.175,7413.785 C91.889,7414.041 91.63,7414.493 91.54,7415.156 C90.97,7415.418 89.522,7415.871 88.63,7414.304 C88.63,7414.304 88.101,7413.319 87.097,7413.247 C87.097,7413.247 86.122,7413.234 87.029,7413.87 C87.029,7413.87 87.684,7414.185 88.139,7415.37 C88.139,7415.37 88.726,7417.2 91.508,7416.58 C91.513,7417.437 91.522,7418.245 91.522,7418.489 C91.522,7418.76 91.338,7419.077 90.839,7418.982 C86.865,7417.627 84,7413.783 84,7409.253 C84,7403.59 88.478,7399 94,7399">
-                                                    </path>
-                                                </g>
-                                            </g>
-                                        </g>
-                                    </g>
-                                </svg>
-                            </button>
-                            <button class="button-sm-project"
-                                onclick="window.location.href='https://www.instagram.com/hugo.pzz/'">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="btn-svg" width="22px" height="22px"
-                                    fill="white" viewBox="0 0 24 24">
-                                    <path
-                                        d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5zm8.75 2.25a.75.75 0 1 1 1.5 0 .75.75 0 0 1-1.5 0zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 1.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7z" />
-                                </svg>
-                            </button>
-                        </div>
+              <div class="hugo_card_main_midline"></div>
+            </div>
 
-                    </div>
-
-                    <div class="flex_r hugo_card_img">
-                        <img src="img/Hugo/Hugo_Foto.jpeg" alt="Foto Hugo">
-                    </div>
-
-                    <div class="flex_r hugo_card_main">
-                        <div class="hugo_card_main_midline"></div>
-
-                        <div class="hugo_about">
-                            <p class="about_intro">
-                                Soy estudiante de <strong class="highlight_career">Ingeniería en Computación</strong>, actualmente en el <strong>sexto semestre</strong>.
-                                Me apasiona la <strong>Ciencia de Datos</strong>, especialmente aplicada al análisis en el mundo del <strong>deporte</strong>,
-                                con enfoque en <span>fútbol</span>.
-                            </p>
-                            <p class="about_tech">
-                                Las tecnologías que utilizo actualmente incluyen:
-                            </p>
-                            <ul class="tech_list">
-                                <li><span class="tech_badge">Python</span></li>
-                                <li><span class="tech_badge">Django</span></li>
-                                <li><span class="tech_badge">FastAPI</span></li>
-                                <li><span class="tech_badge">Scikit-learn</span></li>
-                                <li><span class="tech_badge">NumPy</span></li>
-                                <li><span class="tech_badge">Pandas</span></li>
-                                <li><span class="tech_badge">PyTorch</span></li>
-                                <li><span class="tech_badge">PyQt6</span></li>
-                                <li><span class="tech_badge">Node JS</span></li>
-                                <li><span class="tech_badge">SQL</span></li>
-                            </ul>
-                        </div>
-                        
-                        <div class="hugo_card_main_midline"></div>
-                    </div>
-
-                    <div class="flex_r hugo_card_footer">
-                        <p class="footer-text">&copy; 2025 Hugo Pérez — Ingeniería en Computación</p>
-                    </div>
-                    
-                </div>
-
-                <div class="profile_card flex_c hugo_card">
-                    <div class="flex_r hugo_card_nav">
-                        <div>
-                            <h2 class="hugo_card_profile_name">
-                                Eder Avalos Juarez
-                            </h2>
-                        </div>
-                        <div class="flex_r hugo_card_nav_sm">
-                            <button class="button-sm-project"
-                                onclick="window.location.href='https://github.com/EderAJ30'">
-                                <svg stroke="#fff" fill="#fff" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                    xmlns="http://www.w3.org/2000/svg" version="1.1" class="btn-svg" width="22px"
-                                    viewBox="0 0 20 20">
-                                    <g stroke-width="0" id="SVGRepo_bgCarrier"></g>
-                                    <g stroke-linejoin="round" stroke-linecap="round" id="SVGRepo_tracerCarrier"></g>
-                                    <g id="SVGRepo_iconCarrier">
-                                        <title>github [#fff142]</title>
-                                        <desc>Created with Sketch.</desc>
-                                        <defs></defs>
-                                        <g fill-rule="evenodd" fill="none" stroke-width="1" stroke="none" id="Page-1">
-                                            <g fill="#fff" transform="translate(-140.000000, -7559.000000)"
-                                                id="Dribbble-Light-Preview">
-                                                <g transform="translate(56.000000, 160.000000)" id="icons">
-                                                    <path id="github-[#fff142]"
-                                                        d="M94,7399 C99.523,7399 104,7403.59 104,7409.253 C104,7413.782 101.138,7417.624 97.167,7418.981 C96.66,7419.082 96.48,7418.762 96.48,7418.489 C96.48,7418.151 96.492,7417.047 96.492,7415.675 C96.492,7414.719 96.172,7414.095 95.813,7413.777 C98.04,7413.523 100.38,7412.656 100.38,7408.718 C100.38,7407.598 99.992,7406.684 99.35,7405.966 C99.454,7405.707 99.797,7404.664 99.252,7403.252 C99.252,7403.252 98.414,7402.977 96.505,7404.303 C95.706,7404.076 94.85,7403.962 94,7403.958 C93.15,7403.962 92.295,7404.076 91.497,7404.303 C89.586,7402.977 88.746,7403.252 88.746,7403.252 C88.203,7404.664 88.546,7405.707 88.649,7405.966 C88.01,7406.684 87.619,7407.598 87.619,7408.718 C87.619,7412.646 89.954,7413.526 92.175,7413.785 C91.889,7414.041 91.63,7414.493 91.54,7415.156 C90.97,7415.418 89.522,7415.871 88.63,7414.304 C88.63,7414.304 88.101,7413.319 87.097,7413.247 C87.097,7413.247 86.122,7413.234 87.029,7413.87 C87.029,7413.87 87.684,7414.185 88.139,7415.37 C88.139,7415.37 88.726,7417.2 91.508,7416.58 C91.513,7417.437 91.522,7418.245 91.522,7418.489 C91.522,7418.76 91.338,7419.077 90.839,7418.982 C86.865,7417.627 84,7413.783 84,7409.253 C84,7403.59 88.478,7399 94,7399">
-                                                    </path>
-                                                </g>
-                                            </g>
-                                        </g>
-                                    </g>
-                                </svg>
-                            </button>
-                            <button class="button-sm-project"
-                                onclick="window.location.href='https://www.instagram.com/ederaj.30/'">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="btn-svg" width="22px" height="22px"
-                                    fill="white" viewBox="0 0 24 24">
-                                    <path
-                                        d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5zm8.75 2.25a.75.75 0 1 1 1.5 0 .75.75 0 0 1-1.5 0zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 1.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7z" />
-                                </svg>
-                            </button>
-                        </div>
-
-                    </div>
-
-                    <div class="flex_r hugo_card_img">
-                        <img src="img/EderAJ/Eder.jpg" alt="Foto EderAJ">
-                    </div>
-
-                    <div class="flex_r hugo_card_main">
-                        <div class="hugo_card_main_midline"></div>
-
-                        <div class="hugo_about">
-                            <p class="about_intro">
-                                Soy estudiante de <strong class="highlight_career">Ingeniería en Computación</strong>, actualmente en el <strong>sexto semestre</strong>.
-                                Mi interes va por desarrollo web tanto en el frontend como en el backend y la divulgacion musical.
-                            </p>
-                            <p class="about_tech">
-                                Las tecnologías que utilizo actualmente incluyen:
-                            </p>
-                            <ul class="tech_list">
-                                <li><span class="tech_badge">JavaScript</span></li>
-                                <li><span class="tech_badge">React</span></li>
-                                <li><span class="tech_badge">Node.js</span></li>
-                                <li><span class="tech_badge">Express</span></li>
-                                <li><span class="tech_badge">Java</span></li>
-                                <li><span class="tech_badge">SpringBoot</span></li>
-                                <li><span class="tech_badge">MySQL</span></li>
-                                <li><span class="tech_badge">Linux</span></li>
-                                <li><span class="tech_badge">Github</span></li>
-                                <li><span class="tech_badge">Docker</span></li>
-                            </ul>
-                        </div>
-                        
-                        <div class="hugo_card_main_midline"></div>
-                    </div>
-
-                    <div class="flex_r hugo_card_footer">
-                        <p class="footer-text">&copy; 2025 Eder Avalos Juarez — Ingeniería en Computación</p>
-                    </div>
-                    
-                </div>
-
-            </section>
-
-
-        </main>
-
-
+            <div class="flex_r hugo_card_footer">
+              <p class="footer-text">
+                &copy; 2025 Eder Avalos Juarez — Ingeniería en Computación
+              </p>
+            </div>
+          </div>
+        </section>
+      </main>
     </div>
-
-</body>
-
+  </body>
 </html>
