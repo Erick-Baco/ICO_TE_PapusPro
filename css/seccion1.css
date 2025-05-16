@@ -1,0 +1,138 @@
+/* Fondo general translúcido */
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Cambia aquí el tipo de letra */
+    background: url('https://png.pngtree.com/background/20211217/original/pngtree-computer-light-effect-technology-theme-blue-cool-electronic-background-picture-image_1591421.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #000000; /* Letra negra */
+    backdrop-filter: brightness(0.6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; /* Centra texto dentro de body */
+    padding: 20px;
+  }
+  
+  /* Fondo semitransparente para secciones */
+  section {
+    background-color: rgba(255, 255, 255, 0.644); /* Blanco semitransparente */
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 12px;
+    max-width: 1200px;
+    width: 90%;
+    color: #000; /* Letra negra dentro de section */
+  }
+  
+  /* Estilo para el nav 
+  .navbar {
+    list-style-type: none;
+    padding: 10px;
+    background-color: rgba(0, 0, 50, 0.7);
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+    border-radius: 10px;
+  }
+  
+  .navbar--li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .navbar--li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: scale(1.1);
+    border-radius: 8px;
+  } */
+   /* Navbar */
+.navbar {
+    list-style: none; 
+    padding: 15px; 
+    background-color: rgba(214, 214, 223, 0.603);
+    display: flex;
+    justify-content: space-around;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto 20px; 
+  }
+  
+
+/* Hover: texto animado con gradiente + línea debajo */
+.navbar--item:hover {
+  background: linear-gradient(90deg, #fc466b, #3f5efb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform: scale(1.1);
+}
+  /* Elementos de la barra */
+  .navbar--li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: background-color 0.3s, transform 0.3s;
+    border-radius: 8px; /* incluido desde el hover para consistencia */
+  }
+  
+  .navbar--li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: scale(1.1);
+  }
+  
+  
+  /* Títulos */
+  h2 {
+    color: #021949;
+    border-bottom: 2px solid #021949;
+    padding-bottom: 5px;
+  }
+  
+  h3 {
+    color: #333333;
+  }
+  
+  /* Estilo para imágenes */
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 10px;
+  }
+  
+  /* Estilo "Welcome" con efecto hover */
+  .welcome {
+    font-size: 2.5em;
+    text-align: center;
+    margin-top: 30px;
+    transition: transform 0.5s ease-in-out, color 0.3s;
+    color: #000000;
+  }
+  
+  .welcome:hover {
+    transform: scale(1.2);
+    color: #00ffff;
+  }
+  
+  /* Responsive: opcional para mejorar en móvil */
+  @media screen and (max-width: 600px) {
+    .navbar {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    section {
+      margin: 10px;
+      padding: 10px;
+    }
+  }
+  

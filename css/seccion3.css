@@ -1,0 +1,134 @@
+/* Fuente general, fondo y color base */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url('https://png.pngtree.com/background/20211217/original/pngtree-computer-light-effect-technology-theme-blue-cool-electronic-background-picture-image_1591421.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #ffffff;
+    backdrop-filter: brightness(0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  /* Contenedor principal */
+  .personal_section {
+    width: 90%;
+    max-width: 1200px;
+    background-color: rgba(0, 0, 0, 0.205);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+  }
+  
+ /* Navbar general (idéntica a la anterior) */
+.navbar {
+  list-style: none;
+  padding: 15px;
+  background-color: rgba(0, 0, 50, 0.7);
+  display: flex;
+  justify-content: space-around;
+  border-radius: 10px;
+  margin: 0 auto 20px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* Ítems individuales */
+.navbar--li {
+  list-style: none;
+}
+
+/* Enlaces con efecto moderno */
+.navbar--item {
+  position: relative;
+  color: white;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-weight: bold;
+  padding: 10px 15px;
+  transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s;
+  border-radius: 8px;
+  display: inline-block;
+}
+
+
+/* Hover: texto animado con gradiente + línea debajo */
+.navbar--item:hover {
+  background: linear-gradient(90deg, #fc466b, #3f5efb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform: scale(1.1);
+}
+
+.navbar--item:hover::after {
+  transform: translateX(-50%) scaleX(1);
+}
+
+  
+  /* Tarjeta Scrum */
+  .profile_card {
+    max-width: 1200px;
+    text-align: left;
+    color: #e0ffff;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+  /* Imagen Scrum */
+  .scrum_image {
+    width: 800px;
+    max-width: 100%;
+    border-radius: 15px;
+    /*box-shadow: 0 0 10px #00ffff;
+    object-fit: contain;*/
+  }
+  
+  /* Texto de la tarjeta */
+  .scrum_card_text {
+    flex: 1;
+    min-width: 280px;
+  }
+  
+  .scrum_card_text h1 {
+    font-size: 2.5em;
+    color: #00ffff;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #00ffff;
+    padding-bottom: 10px;
+  }
+  
+  .scrum_card_text p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #f5f5f5;
+  }
+  
+  .scrum_card_text strong {
+    color: #00ffff;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .profile_card {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .scrum_card_text {
+      text-align: center;
+    }
+  }
+  

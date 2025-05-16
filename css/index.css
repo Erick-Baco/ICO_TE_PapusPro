@@ -1,0 +1,131 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap');
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+              url('https://png.pngtree.com/background/20211217/original/pngtree-computer-light-effect-technology-theme-blue-cool-electronic-background-picture-image_1591421.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #F5F3F0;
+}
+
+/* Flex utilidades */
+.flex_c {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex_r {
+  display: flex;
+  flex-direction: row;
+}
+
+.align_items_c {
+  align-items: center;
+}
+
+.full_container {
+  min-height: 100vh;
+}
+
+/* Hover: texto animado con gradiente + línea debajo */
+.navbar--item:hover {
+  background: linear-gradient(90deg, #fc466b, #3f5efb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform: scale(1.1);
+}
+
+.navbar--item:hover::after {
+  transform: translateX(-50%) scaleX(1);
+}
+
+/* Navbar */
+header {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.navbar {
+  list-style: none;
+  justify-content: center;
+  gap: 20px;
+}
+
+.navbar--li {
+  margin: 0 10px;
+}
+
+.navbar--item {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding: 10px 18px;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar--item:hover {
+  background-color: #FFDAC1;
+  color: #333;
+}
+
+/* Contenido principal */
+.main_container {
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+}
+
+.welcome_container {
+  background-color: rgba(255, 255, 255, 0.15);
+  padding: 60px 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  text-align: center;
+  max-width: 600px;
+  backdrop-filter: blur(10px);
+}
+
+.welcome_container h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: #FFDAC1;
+  letter-spacing: 3px;
+  text-shadow: 2px 2px 10px rgba(0,0,0,0.4);
+  user-select: none;
+  transition: transform 0.4s ease-in-out;
+  cursor: pointer;
+}
+
+.welcome_container h1:hover {
+  transform: scale(1.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .main_container {
+    flex-direction: column;
+  }
+
+  .welcome_container {
+    width: 90%;
+  }
+
+  .welcome_container h1 {
+    font-size: 2.5rem;
+  }
+}
